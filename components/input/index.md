@@ -4,10 +4,11 @@ route: /components/input
 menu: 组件
 ---
 
-import CodeBox from '../../doc-comps/happy-box';
+[comment]: <> (import CodeBox from '../../doc-comps/happy-box';)
 
-import BasicDemo from './demo/basic';
-import BasicDemoCode from '!raw-loader!./demo/basic';
+[comment]: <> (import BasicDemo from './demo/basic';)
+
+[comment]: <> (import BasicDemoCode from '!raw-loader!./demo/basic';)
 
 ## Input 输入框
 
@@ -17,9 +18,11 @@ import BasicDemoCode from '!raw-loader!./demo/basic';
 
 #### 基本使用
 
-<CodeBox code={BasicDemoCode} title="" desc="">
-  <BasicDemo></BasicDemo>
-</CodeBox>
+[comment]: <> (<CodeBox code={BasicDemoCode} title="" desc="">)
+
+[comment]: <> (  <BasicDemo></BasicDemo>)
+
+[comment]: <> (</CodeBox>)
 
 
 ### API

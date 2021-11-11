@@ -1,7 +1,7 @@
 import { defineConfig } from 'dumi';
 
 // 此处更换为自己的仓库名
-let base: string | undefined = '/react-ui-library-tutorial';
+let base: string | undefined = '/atom';
 let publicPath: string | undefined = '/react-ui-library-tutorial/';
 
 if (process.env.SITE_BUILD_ENV === 'PREVIEW') {
@@ -17,6 +17,19 @@ export default defineConfig({
   dynamicImport: {},
   webpack5: {},
   mfsu: {},
+  resolve: {
+    includes: ['docs', 'components']
+  },
   base,
   publicPath,
+  menus: {
+    '/components': [
+      {
+        title: '数据录入',
+        children: [
+          'input'
+        ]
+      }
+    ]
+  }
 });
