@@ -1,7 +1,12 @@
 ---
 name: Input 输入框
-route: /components/input
-menu: 组件
+nav:
+  path: /components
+  title: 组件
+  order: 2
+group:
+  title: Input
+  order: 1
 ---
 
 [comment]: <> (import CodeBox from '../../doc-comps/happy-box';)

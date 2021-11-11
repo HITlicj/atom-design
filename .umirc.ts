@@ -3,12 +3,14 @@ import { defineConfig } from 'dumi';
 // 此处更换为自己的仓库名
 let base: string | undefined = '/atom';
 let publicPath: string | undefined = '/react-ui-library-tutorial/';
-
+import path from 'path';
 if (process.env.SITE_BUILD_ENV === 'PREVIEW') {
   base = undefined;
   publicPath = undefined;
 }
-
+export function resolve(paths: string) {
+  return path.resolve(__dirname, paths);
+}
 export default defineConfig({
   title: 'Atom UI',
   mode: 'site',
@@ -18,18 +20,9 @@ export default defineConfig({
   webpack5: {},
   mfsu: {},
   resolve: {
-    includes: ['docs', 'components']
+    includes: [resolve('docs'), resolve('components')]
   },
+  locales: [['zh-CN', '中文']],
   base,
   publicPath,
-  menus: {
-    '/components': [
-      {
-        title: '数据录入',
-        children: [
-          'input'
-        ]
-      }
-    ]
-  }
 });
