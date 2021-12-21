@@ -1,8 +1,8 @@
 {
   "name": "@atom-web/ui-react",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "description": "A React UI Library.",
-  "homepage": "https://github.com/worldzhao/react-ui-library-tutorial#readme",
+  "homepage": "https://github.com/lichuanjie",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
@@ -44,7 +44,7 @@
   "keywords": [],
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/worldzhao/react-ui-library-tutorial/issues"
+    "url": "https://github.com/lichuanjie"
   },
   "lint-staged": {
     "src/**/*.ts?(x)": [
