@@ -1,5 +1,5 @@
 {
-  "name": "atom",
+  "name": "@atom-web/ui-react",
   "version": "1.1.0",
   "description": "A React UI Library.",
   "homepage": "https://github.com/worldzhao/react-ui-library-tutorial#readme",
@@ -11,8 +11,8 @@
   "main": "lib/index.js",
   "module": "esm/index.js",
   "authors": {
-    "name": "worldzhao",
-    "email": "1007326924@qq.com"
+    "name": "lichuanjie",
+    "email": "17611269916@163.com"
   },
   "files": [
     "lib",

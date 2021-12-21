@@ -1,6 +1,7 @@
 import React from 'react';
-import { Input } from 'happy-ui';
+import Input from '../';
+import '../style'
 
 export default () => (
-<Input />
+  <Input />
 );

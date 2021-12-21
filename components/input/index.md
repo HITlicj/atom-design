@@ -20,7 +20,7 @@ group:
 输入框
 
 ### 代码演示
-
+<code src="./demo/basic.tsx"></code>
 #### 基本使用
 
 [comment]: <> (<CodeBox code={BasicDemoCode} title="" desc="">)

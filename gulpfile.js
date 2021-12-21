@@ -11,8 +11,8 @@ const paths = {
     esm: 'esm',
     dist: 'dist',
   },
-  styles: 'src/**/*.less',
-  scripts: ['src/**/*.{ts,tsx}', '!src/**/demo/*.{ts,tsx}', '!src/**/__tests__/*.{ts,tsx}'],
+  styles: 'components/**/*.less',
+  scripts: ['components/**/*.{ts,tsx}', '!components/**/demo/*.{ts,tsx}', '!components/**/__tests__/*.{ts,tsx}'],
 };
 
 /**
@@ -73,11 +73,11 @@ function compileESM() {
   return compileScripts('esm', dest.esm);
 }
 
-// const buildScripts = gulp.series(compileCJS, compileESM);
+const buildScripts = gulp.series(compileCJS, compileESM);
 /**
  * 目前没有commonjs的使用场景
  */
-const buildScripts = gulp.series(compileESM);
+// const buildScripts = gulp.series(compileESM);
 /**
  * 拷贝less文件
  */
